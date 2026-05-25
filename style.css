@@ -1,0 +1,47 @@
+﻿body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
+}
+
+/* 顶部 */
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+/* 导航 */
+nav {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+/* 每个作品区 */
+section {
+  padding: 120px 60px;
+}
+
+/* 图片排版（关键） */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
