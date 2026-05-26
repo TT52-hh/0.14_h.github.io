@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,37 +8,61 @@
 
 <body>
 
-  <!-- 顶部 -->
-  <section id="hero">
-    <h1>Your Name</h1>
-    <p>Portfolio / Works</p >
-  </section>
+<!-- LEFT -->
+<div class="left">
 
-  <!-- 导航 -->
-  <nav>
-    <a href=" ">Work 1</a >
-    <a href="#work2">Work 2</a >
-  </nav>
+  <div class="brand">TT</div>
 
-  <!-- 作品1 -->
-  <section id="work1">
-    <h2>Work 1</h2>
+  <div class="block">
+    <div class="label">Upcoming</div>
+    <a class="highlight" href="#w1">Alphabet, Fortunate Space</a>
+    <div class="meta">Jul 7 – Aug 8</div>
+  </div>
 
-    <div class="gallery">
-      < img src="images/work1.jpg">
-      < img src="images/work2.jpg">
-    </div>
-  </section>
+  <div class="block">
+    <div class="label">Previously</div>
 
-  <!-- 作品2 -->
-  <section id="work2">
-    <h2>Work 2</h2>
+    <a href="#w1">2047 — Project A</a>
+    <a href="#w2">2046 — Project B</a>
+    <a href="#w3">2045 — Project C</a>
+  </div>
 
-    <div class="gallery">
-      < img src="images/work1.jpg">
-    </div>
-  </section>
+  <div class="clock" id="clock"></div>
 
-  <script src="script.js"></script>
+</div>
+
+<!-- RIGHT -->
+<div class="right">
+
+  <div class="intro">
+    TT® Visual Designer<br>
+    based in Guangdong
+  </div>
+
+  <div class="desc">
+    Minimal portfolio focused on visual systems, editorial layout and interaction design.
+    <br><br>
+    Email / CV / Instagram
+  </div>
+
+  <div class="footer">© 2026</div>
+
+</div>
+
+<!-- WORKS -->
+<section id="w1" class="work">
+  <div class="work-title">Project A</div>
+  <div class="work-body">Image / text / layout block here</div>
+</section>
+
+<section id="w2" class="work">
+  <div class="work-title">Project B</div>
+</section>
+
+<section id="w3" class="work">
+  <div class="work-title">Project C</div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
