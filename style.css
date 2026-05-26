@@ -1,106 +1,76 @@
 ﻿body {
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
-  background: #fff;
+  background: white;
   color: #111;
   line-height: 1.4;
 }
 
-/* LEFT */
+/* 左侧 */
 .left {
   position: fixed;
   left: 40px;
   top: 40px;
-  width: 32%;
 }
 
 .brand {
-  font-size: 22px;
-  letter-spacing: 1px;
-  margin-bottom: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
-.block {
-  margin-bottom: 24px;
-}
-
-.label {
-  font-size: 11px;
-  opacity: 0.4;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.left a {
+.block a {
   display: block;
   text-decoration: none;
-  color: #111;
-  font-size: 14px;
-  margin: 3px 0;
-  transition: 0.2s;
+  color: black;
+  margin: 5px 0;
+  opacity: 1;
 }
 
-.left a:hover {
+.block a:hover {
   opacity: 0.4;
-  transform: translateX(2px);
 }
 
-.highlight {
-  background: #fff59d;
-  display: inline-block;
-  padding: 2px 4px;
-}
-
-.meta {
-  font-size: 12px;
-  opacity: 0.5;
-}
-
-/* RIGHT */
+/* 右侧 */
 .right {
   margin-left: 40%;
-  padding: 60px 60px 60px 0;
-  max-width: 520px;
+  padding: 60px;
+  max-width: 500px;
 }
 
 .intro {
   font-size: 18px;
-  margin-bottom: 30px;
 }
 
 .desc {
+  margin-top: 20px;
   font-size: 14px;
-  opacity: 0.75;
-}
-
-.footer {
-  margin-top: 60px;
-  font-size: 12px;
-  opacity: 0.4;
-}
-
-/* WORK */
-.work {
-  margin-left: 40%;
-  padding: 120px 60px 120px 0;
-  min-height: 100vh;
-}
-
-.work-title {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.work-body {
-  font-size: 13px;
   opacity: 0.7;
 }
 
-/* CLOCK */
+/* 返回按钮 */
+.back {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+/* 作品页 */
+.project {
+  margin-left: 40%;
+  padding: 80px 60px;
+}
+
+.project img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* footer */
 .clock {
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   left: 40px;
   font-size: 12px;
   opacity: 0.5;
