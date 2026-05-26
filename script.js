@@ -1,8 +1,14 @@
-﻿document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener("click", function(e) {
-    e.preventDefault();
+function updateClock() {
+  const now = new Date();
 
-    document.querySelector(this.getAttribute("href"))
-      .scrollIntoView({ behavior: "smooth" });
+  const date = now.toLocaleDateString("en-GB", {
+    year: "numeric",
+    month: "short",
+    day: "2-digit"
   });
-});
+
+  document.getElementById("clock").innerText = date;
+}
+
+updateClock();
+setInterval(updateClock, 1000);
